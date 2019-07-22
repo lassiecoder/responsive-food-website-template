@@ -1,0 +1,335 @@
+        body
+        {
+            padding: 0;
+            margin: 40px;
+        }
+        .wrapper
+        {
+            display: grid;
+            grid-gap: 2em; 
+            /* line-height: 1.4; */
+            font-family: arial;
+        }
+        .main-nav ul
+        {
+            display: grid;
+            grid-gap: 2em;
+            padding: 0;
+            list-style: none;
+            grid-template-columns: repeat(4, 1fr);
+        }
+        .main-nav a
+        {
+            display: block;
+            text-decoration: none;
+            padding: 1em;
+            text-align: center;
+            color: rgb(68, 67, 67);
+            /* background: darkcyan; */
+            opacity: 0.8;
+            border: 1px solid black;
+            border-radius: 20px;
+        }
+        .main-nav a:hover
+        {
+            /*   background: rgb(90, 0, 90); */
+            background: rgb(233, 233, 233);
+            color: black;
+            /*     border: 1px solid white; */
+            border-radius: 20px;
+        }
+        .main-container
+        {
+            display: grid;
+            /*   grid-template-columns: 5fr 3fr; */
+            background: url(https://images.pexels.com/photos/1565982/pexels-photo-1565982.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+            /* opacity: 0.8; */
+            border-radius: 2em;
+            filter: grayscale(30%);
+            background-size: cover;
+            background-position: center;
+            padding: 6em;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: white;
+        }
+        .btn
+        {
+            text-decoration: none;
+            color: black;
+            font-size: 14px;
+            background: white;
+            padding: 10px 15px;
+            opacity: 0.6;
+            border-radius: 8em;
+        }
+        .description a:hover
+        {
+            opacity:0.7;    
+        }
+
+        .features
+        {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            text-align: center;
+            grid-gap: 3em;
+        }
+        /* .features > i
+        {
+        color: red;
+        } */
+        .features > .box1
+        {
+            background: rgb(233, 233, 233);
+            padding: 1em;
+            border-radius: 3em;
+        }
+        .features > .box2
+        {
+            background: rgb(233, 233, 233);
+            padding: 1em;
+            border-radius: 3em;
+        }
+        .features > .box3
+        {
+            background: rgb(233, 233, 233);
+            padding: 1em;
+            border-radius: 3em;
+        }
+
+        .quick-search
+        {
+            background: rgb(233, 233, 233);
+            padding: 2.5em;
+            border-radius: 3em;
+        }
+
+        .about > h3
+        {
+            font-size: 25px;
+            letter-spacing: 2px;
+        }
+        .about > p
+        {
+            font-size: 20px;
+            letter-spacing: 1px;
+        }
+        .meal
+        {
+            text-align: center;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 1em;
+        }
+        .links
+        {
+            display: grid;
+            grid-template-columns: 3fr 5fr 3fr;
+            grid-auto-rows: minmax(100px, auto);
+            justify-items: stretch;
+            align-items: stretch;
+            /*   grid-gap: 1em; */
+            grid-gap: 2em;
+            text-align: center;
+        }
+        .about-remain
+        {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-column: 1/3;
+            padding: 2.5em;
+            background: rgb(233, 233, 233);
+            border-radius: 2.7em;
+            text-align: center;
+        }
+        .web-links
+        {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-column: 3/5;
+            padding: 2.5em;
+            background: rgb(233, 233, 233);
+            border-radius: 2.7em;
+            text-align: center;
+        }
+        .credit
+        {
+            display: grid;
+            grid-template-columns: 4fr;
+        }
+        .credit > p
+        {
+            grid-column: 3/5;
+            padding: 1.5em;
+            background: rgb(233, 233, 233);
+            border-radius: 2.7em;
+            text-align: center; 
+            font-size: 12px;
+        }
+
+
+
+/* MEDIA QUERIES */
+
+@media(max-width: 1000px)
+{
+    .main-container
+    {
+        font-size: 15px;
+        padding: 4em;
+    }
+    .btn
+    {
+        text-decoration: none;
+        color: black;
+        font-size: 12px;
+        font-weight: bold;
+        background: white;
+        padding: 8px 12px;
+        opacity: 0.6;
+        border-radius: 8em;
+    }
+}
+
+
+@media(max-width: 850px)
+{
+    .main-container
+    {
+        font-size: 13px;
+        padding: 4em;
+    }
+    .btn
+    {
+        text-decoration: none;
+        color: black;
+        font-size: 12px;
+        font-weight: bold;
+        background: white;
+        padding: 8px 12px;
+        opacity: 0.6;
+        border-radius: 8em;
+    }
+}
+
+
+@media(max-width: 730px)
+{
+    .main-container
+    {
+        font-size: 11px;
+        padding: 4em;
+    }
+    .btn
+    {
+        text-decoration: none;
+        color: black;
+        font-size: 12px;
+        font-weight: bold;
+        background: white;
+        padding: 8px 12px;
+        opacity: 0.6;
+        border-radius: 8em;
+    }
+    .features
+    {
+        display: grid;
+        grid-template-columns: 1fr;
+    }  
+    .features > .box1
+    {
+        background: rgb(233, 233, 233);
+        padding: 1em;
+        border-radius: 3em;
+    }
+    .meal
+    {
+        text-align: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1em;
+    }
+    .about-remain
+    {
+        display: grid;
+        grid-column: 1/4;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .web-links
+    {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column: 2/3;
+    }
+}
+
+
+@media(max-width: 500px)
+{
+    .main-nav ul
+    {
+        grid-template-columns: 1fr;
+    }
+    .main-nav a
+    {
+        display: grid;
+        text-decoration: none;
+    /*       padding: 0.5em; */
+        text-align: center;
+        color: black;
+        /* background: darkcyan; */
+    /*       opacity: 0.8; */
+        border: 1px solid gray;
+        border-radius: 20px;
+        font-size: 10px;
+    }
+    .main-nav a:hover
+    {
+        background: rgb(233, 233, 233);
+        color: black;
+        border-radius: 20px;
+        
+    }
+    .main-container
+    {
+        font-size: 7px;
+        padding: 4em;
+    }
+    .description > h4
+    {
+        font-size: 10px;
+    }
+    .btn
+    {
+        text-decoration: none;
+        color: black;
+        font-size: 8px;
+        font-weight: bold;
+        background: white;
+        padding: 8px 12px;
+        opacity: 0.6;
+        border-radius: 8em;
+    }
+    .about > p
+    {
+        font-size: 18px;
+    }
+    .about-remain
+    {
+        font-size: 14px;
+        display: grid;
+        grid-gap: 1em;
+        grid-template-columns: repeat(2, 1fr);
+        text-align: center;
+    }
+    .web-links
+    {
+        grid-column: 1/4;
+    }
+    .credit > p
+    {
+        font-size: 9.5px;
+    }
+}
